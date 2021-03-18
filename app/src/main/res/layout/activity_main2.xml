@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-9dp"
+        tools:layout_editor_absoluteY="-11dp">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".ui.login.registroActivity">
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="321dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="50dp"
+                android:layout_marginRight="50dp"
+                android:onClick="eliminar"
+                android:text="ELIMINAR"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button3" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="321dp"
+                android:layout_height="47dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="50dp"
+                android:layout_marginRight="50dp"
+                android:onClick="actualizar"
+                android:text="Actualizar"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ram" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="333dp"
+                android:layout_height="46dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="33dp"
+                android:layout_marginEnd="38dp"
+                android:layout_marginRight="38dp"
+                android:text="Datos del Dispositivo"
+                android:textSize="24sp"
+                android:gravity="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/serie"
+                android:layout_width="335dp"
+                android:layout_height="47dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="36dp"
+                android:layout_marginRight="36dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:hint="Numero de Serie"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+            <EditText
+                android:id="@+id/descripcion"
+                android:hint="Descripcion"
+                android:layout_width="332dp"
+                android:layout_height="47dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="35dp"
+                android:layout_marginEnd="39dp"
+                android:layout_marginRight="39dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/serie" />
+
+            <EditText
+                android:id="@+id/tamano"
+                android:hint="Tamaño"
+                android:layout_width="327dp"
+                android:layout_height="52dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="28dp"
+                android:layout_marginEnd="44dp"
+                android:layout_marginRight="44dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/descripcion" />
+
+            <EditText
+                android:id="@+id/So"
+                android:hint="Sistema Operativo"
+                android:layout_width="324dp"
+                android:layout_height="49dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="28dp"
+                android:layout_marginEnd="47dp"
+                android:layout_marginRight="47dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tamano" />
+
+            <EditText
+                android:id="@+id/camara"
+                android:hint="Camara"
+                android:layout_width="329dp"
+                android:layout_height="49dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="34dp"
+                android:layout_marginEnd="42dp"
+                android:layout_marginRight="42dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/So" />
+
+            <EditText
+                android:id="@+id/ram"
+                android:hint="Ram"
+                android:layout_width="321dp"
+                android:layout_height="42dp"
+                android:layout_marginStart="43dp"
+                android:layout_marginLeft="43dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="47dp"
+                android:layout_marginRight="47dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/camara" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="321dp"
+                android:layout_height="47dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="50dp"
+                android:layout_marginRight="50dp"
+                android:onClick="registrar"
+                android:text="Registrar"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ram" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

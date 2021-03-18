@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/serie_lista"
+        android:layout_width="234dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        app:layout_constraintEnd_toStartOf="@+id/ram_list"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/descrip_lista"
+        android:layout_width="175dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="19dp"
+        android:layout_marginRight="19dp"
+        app:layout_constraintEnd_toStartOf="@+id/tama_list"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/serie_lista" />
+
+    <TextView
+        android:id="@+id/so_list"
+        android:layout_width="175dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="19dp"
+        android:layout_marginRight="19dp"
+        app:layout_constraintEnd_toStartOf="@+id/camara_list"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/descrip_lista" />
+
+    <TextView
+        android:id="@+id/camara_list"
+        android:layout_width="175dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/so_list"
+        app:layout_constraintTop_toBottomOf="@+id/tama_list" />
+
+    <TextView
+        android:id="@+id/ram_list"
+        android:layout_width="119dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/serie_lista"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tama_list"
+        android:layout_width="175dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/descrip_lista"
+        app:layout_constraintTop_toBottomOf="@+id/ram_list" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "393640846424",
+    "project_id": "javier-espinalesf-optativa",
+    "storage_bucket": "javier-espinalesf-optativa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:393640846424:android:eec87deb745db7e030162d",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "393640846424-msi52o1ul5vbv8mbib1nbo1e21hlal7d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDUzo-XPEfCwTODQvBHSlHmLarmQ1yQSmg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "393640846424-msi52o1ul5vbv8mbib1nbo1e21hlal7d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
